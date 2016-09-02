@@ -1,0 +1,40 @@
+.some-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.some-icon {
+  width: $icon-size;
+  height: $icon-size;
+  background: {
+    repeat: no-repeat;
+    size: 100%;
+    position: center;
+  }
+  margin: 0 .5em;
+  transition: transform .25s ease;
+
+  &:hover {
+    @include breakpoint(40em) {
+      transform: translateY(-10%);
+    }
+  }
+}
+
+.some-icon--twitter {
+  background: {
+    image: url("/img/icon--twitter.svg");
+  }
+}
+
+.some-icon--github {
+  background: {
+    image: url("/img/icon--github.svg");
+  }
+}
+
+.some-icon--linkedin {
+  background: {
+    image: url("/img/icon--linkedin.svg");
+  }
+}

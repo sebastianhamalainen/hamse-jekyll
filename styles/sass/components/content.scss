@@ -1,0 +1,49 @@
+.content-block {
+  padding: $vertical-space * 2 0;
+
+  &:not(:first-child) {
+    padding-top: 0;
+  }
+
+  &:first-child {
+    margin-bottom: $vertical-space * 2;
+  }
+
+  @include breakpoint(26em) {
+    padding: $vertical-space * 2.25 0;
+  }
+
+  @include breakpoint(40em) {
+    padding: $vertical-space * 2.5 0;
+  }
+
+  @include breakpoint(50em) {
+    padding: $vertical-space * 2.75 0;
+  }
+
+  @include breakpoint(60em) {
+    padding: $vertical-space * 3 0;
+  }
+}
+
+.content-block--gray-dark {
+  background-color: $gray-very-dark;
+
+  & * {
+    color: $white;
+  }
+
+  &:first-child {
+    box-shadow: 0 4px 10px rgba($black, .5);
+  }
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background-image--frontpage {
+  background-image: linear-gradient(rgba($black, .6), rgba($black, .6)), url("/img/bg.jpg");
+}

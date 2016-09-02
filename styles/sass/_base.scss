@@ -1,0 +1,145 @@
+@import "mixin/_mixin.scss";
+@import "variables/_variables.scss";
+
+html {
+  @include font-family-main;
+  box-sizing: border-box;
+  background: $white-darker;
+}
+
+::selection {
+  background: $red;
+  color: $white;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+body {
+  color: $gray;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+dl,
+menu,
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  @include font-size(16px);
+  outline: 0;
+  text-decoration: none;
+  color: $white-darkest;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
+}
+
+img,
+media {
+  height: auto;
+  max-width: 100%;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+  cursor: default;
+  margin: 0;
+  padding-bottom: .4em;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  font-weight: 300;
+  line-height: 1.15em;
+}
+
+h1 {
+  @include font-size(28px);
+}
+
+h2 {
+  @include font-size(25px);
+}
+
+h3 {
+  @include font-size(21px);
+}
+
+h4 {
+  @include font-size(18px);
+}
+
+// Tables
+table {
+  width: 100%;
+}
+
+th {
+  background: none;
+  padding: 0;
+}
+
+// @todo remove .menu styles from base.
+.menu .leaf,
+.menu .expanded,
+.menu .collapsed {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+// Default inputs
+input {
+  -webkit-appearance: textfield;
+
+  &:not(.form-checkbox) {
+    -webkit-appearance: none;
+  }
+}
+
+.form-submit {
+  display: inline-block;
+
+  &.js-hide {
+    display: none;
+  }
+
+  & + & {
+    margin-left: 1em;
+  }
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,13 @@
+# Build stuff
+port: 8080
+
+sass:
+  sass_dir: styles/sass
+  style: compressed
+
+exclude: [
+  'styles/README.html',
+  'styles/README.md',
+  'Gemfile',
+  'Gemfile.lock',
+]

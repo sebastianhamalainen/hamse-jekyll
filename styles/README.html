@@ -1,0 +1,27 @@
+<h1 id="readme">README</h1>
+<h3 id="how-do-i-use-the-mixins-">How do I use the mixins?</h3>
+<ul>
+<li>go to your sass file e.g. <code>_frontpage.sass</code></li>
+<li><h3 id="make-sure-you-have-imported-the-mixins-folder-import-mixin-_mixin-sass-">MAKE SURE YOU HAVE IMPORTED THE MIXINS FOLDER <code>@import &quot;mixin/_mixin.sass&quot;</code></h3>
+</li>
+</ul>
+<h3 id="mixins">Mixins</h3>
+<p>These sass mixing will output</p>
+<pre><code>#!sass
+.box
+  +transition(&#39;background .5s ease-in-out&#39;)
+  +border-radius(.4em)
+</code></pre><p>this</p>
+<pre><code>#!css
+
+.box {
+  -webkit-transition: background .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out;
+  -ms-transition: background .5s ease-in-out;
+  -o-transition: background .5s ease-in-out;
+  transition: background .5s ease-in-out;
+  -webkit-border-radius: 0.4em;
+  border-radius: 0.4em;
+  background-clip: padding-box;
+}
+</code></pre>
