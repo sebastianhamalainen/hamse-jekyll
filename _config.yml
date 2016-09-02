@@ -6,8 +6,8 @@ sass:
   style: compressed
 
 exclude: [
-  'styles/README.html',
-  'styles/README.md',
+  'styles/',
   'Gemfile',
   'Gemfile.lock',
+  'README.md'
 ]
