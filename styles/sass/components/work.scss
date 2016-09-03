@@ -32,7 +32,7 @@
   &:hover {
     @include breakpoint(40em) {
       box-shadow: 0 16px 40px rgba($black, .2);
-      transform: scale(1.05);
+      transform: translateY(-10%);
     }
   }
 }
