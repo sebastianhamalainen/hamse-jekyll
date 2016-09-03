@@ -36,3 +36,14 @@
     image: url("/img/icon--linkedin.svg");
   }
 }
+
+.some-icon--hamse {
+  background: {
+    image: url("/img/icon--hamse.jpg");
+  }
+  border-radius: 100%;
+  display: block;
+  height: $icon-size * .75;
+  margin: 1em auto;
+  width: $icon-size * .75;
+}
