@@ -3,12 +3,10 @@ layout: work
 title: "Shell HelmiSimpukka"
 project: "helmisimpukka"
 project-url: https://shellhelmisimpukka.fi
+post-title: "Shell HelmiSimpukka"
 ---
 
-{:.text--bold}
-<h1>Shell HelmiSimpukka</h1>
-
-Was my first project under Druid Oy and worked in a team of 4-6 people.
+Was my first real project at Druid Oy and worked in a team of 4-6 people.
 
 I mainly did front-end related work (most notably the group offer form and lunch blocks), because I excel at that.
 
