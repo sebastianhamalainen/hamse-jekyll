@@ -11,3 +11,5 @@ exclude: [
   'Gemfile.lock',
   'README.md'
 ]
+
+permalink: "work/:title/"

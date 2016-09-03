@@ -1,11 +1,10 @@
 <section class="content-block wrapper">
   <h2 class="heading--subheading text--bold">work</h2>
   <div class="work-projects">
-    <div class="work-projects__project project--helmisimpukka">
-      <a class="work-projects__project-link" href="https://shellhelmisimpukka.fi"></a>
-    </div>
-    <div class="work-projects__project project--druid">
-      <a class="work-projects__project-link" href="https://druid.fi"></a>
-    </div>
+    {% for work in site.posts %}
+      <div class="work-projects__project project--{{ work.project }}">
+        <a class="work-projects__project-link" href="{{ work.url }}"></a>
+      </div>
+    {% endfor %}
   </div>
 </section>

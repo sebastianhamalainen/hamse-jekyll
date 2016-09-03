@@ -47,3 +47,30 @@
 .background-image--frontpage {
   background-image: linear-gradient(rgba($black, .6), rgba($black, .6)), url("/img/bg.jpg");
 }
+
+.content-block--work {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8em auto;
+  padding: $vertical-space * 4 0;
+
+  @include breakpoint(26em) {
+    background-size: 10em auto;
+    padding: $vertical-space * 4.25 0;
+  }
+
+  @include breakpoint(40em) {
+    background-size: 12em auto;
+    padding: $vertical-space * 4.5 0;
+  }
+
+  @include breakpoint(50em) {
+    background-size: 14em auto;
+    padding: $vertical-space * 4.75 0;
+  }
+
+  @include breakpoint(60em) {
+    background-size: 16em auto;
+    padding: $vertical-space * 5 0;
+  }
+}
