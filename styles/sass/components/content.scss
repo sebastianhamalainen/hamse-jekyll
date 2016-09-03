@@ -74,3 +74,37 @@
     padding: $vertical-space * 5 0;
   }
 }
+
+.content-block--side {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(45em) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.content-block--50 {
+  @include breakpoint(45em) {
+    width: calc(100% / 2 - 1%);
+  }
+}
+
+.content-block__text {
+  @include font-size(18px);
+  line-height: 1.5em;
+  margin-bottom: $vertical-space * 2;
+
+  & * {
+    color: $gray-very-dark;
+  }
+
+  p {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
