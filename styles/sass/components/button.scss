@@ -1,25 +1,24 @@
 .btn {
-  @include font-size(18px);
+  @include font-size(16px);
   display: block;
+  font-weight: 300;
   margin: 10px auto;
-  max-width: 500px;
-  padding: 10px 30px;
+  padding: 10px 100px;
   text-align: center;
   text-transform: uppercase;
-  transition: transform .25s ease, box-shadow .25s ease;
+  transition: transform .25s ease;
 
-  @include breakpoint(26em) {
-    @include font-size(20px);
+  @include breakpoint(55em) {
+    @include font-size(18px);
+    display: table;
   }
 
   &:hover {
-    @include breakpoint(40em) {
-      transform: scale(1.05);
-    }
+    transform: translateY(-10%);
   }
 }
 
-.btn--gray {
-  background-color: $gray-very-dark;
+.btn--red {
+  background-color: $red;
   color: $white;
 }
