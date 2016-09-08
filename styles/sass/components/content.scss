@@ -74,6 +74,7 @@
 .content-block--side {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   @include breakpoint(55em) {
     flex-direction: row;
@@ -81,26 +82,16 @@
   }
 }
 
-.content-block--50 {
+.content-block--40 {
   @include breakpoint(55em) {
-    width: calc(100% / 2 - 1%);
+    width: 40%;
   }
 }
 
-.content-block__text {
-  @include font-size(18px);
-  line-height: 1.5em;
-  margin-bottom: $vertical-space * 2;
+.content-block--60 {
+  margin-bottom: 2rem;
 
-  & * {
-    color: $gray-very-dark;
-  }
-
-  p {
-    margin-bottom: 15px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+  @include breakpoint(55em) {
+    width: 60%;
   }
 }
